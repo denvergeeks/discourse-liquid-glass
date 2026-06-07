@@ -1,0 +1,15 @@
+glass_header_enabled:
+  default: true
+  type: bool
+
+glass_nav_pills_enabled:
+  default: true
+  type: bool
+
+glass_intensity:
+  default: medium
+  type: enum
+  choices:
+    - subtle
+    - medium
+    - strong
