@@ -3,7 +3,7 @@
 // This file defines the utility classes used in custom markup
 // and the above-site-header connector.
 
-@import "mixins";
+@use "mixins" as *;
 
 // Generic utility classes for custom markup
 .liquid-glass {
