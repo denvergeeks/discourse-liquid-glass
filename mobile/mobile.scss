@@ -1,4 +1,5 @@
 // Mobile liquid glass tweaks
+@import "../common/mixins";
 
 .d-header .wrap {
   @include liquid-glass-surface(var(--lg-radius-pill));
