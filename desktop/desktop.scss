@@ -1,5 +1,5 @@
 // Desktop liquid glass integration
-@import "../common/mixins";
+@use "../common/mixins" as *;
 
 // Header shell: rounded, floating, glassy bar
 .d-header .wrap {
@@ -34,25 +34,3 @@
 }
 
 // Topic list dropdowns / combo-boxes
-.list-controls .combo-box .combo-box-header {
-  border-radius: var(--lg-radius-pill);
-  @include liquid-glass-surface(var(--lg-radius-pill));
-  @include liquid-glass-interactive;
-  padding-inline: 0.75rem;
-  padding-block: 0.25rem;
-}
-
-// Composer shell
-.composer-popup {
-  border-radius: 20px;
-  box-shadow: none;
-}
-
-.d-editor-container {
-  @include liquid-glass-surface(20px);
-}
-
-.d-editor-button-bar {
-  background: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-}
