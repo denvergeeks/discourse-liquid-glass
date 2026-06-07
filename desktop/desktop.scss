@@ -1,0 +1,57 @@
+// Desktop liquid glass integration
+
+// Header shell: rounded, floating, glassy bar
+.d-header .wrap {
+  @include liquid-glass-surface(var(--lg-radius-pill));
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-inline: 0.75rem;
+  align-items: center;
+}
+
+// Keep header contents aligned as usual
+.d-header .contents,
+.d-header .panel {
+  background: none;
+  box-shadow: none;
+}
+
+// Nav pills: glass for active/hover states
+.navigation-container .nav-pills > li > a {
+  border-radius: var(--lg-radius-pill);
+  padding-inline: 0.85rem;
+  padding-block: 0.35rem;
+  border: 1px solid transparent;
+  background: transparent;
+}
+
+.navigation-container .nav-pills > li > a.active,
+.navigation-container .nav-pills > li > a:hover {
+  @include liquid-glass-surface(var(--lg-radius-pill));
+  @include liquid-glass-interactive;
+  color: var(--primary-high);
+}
+
+// Topic list dropdowns / combo-boxes
+.list-controls .combo-box .combo-box-header {
+  border-radius: var(--lg-radius-pill);
+  @include liquid-glass-surface(var(--lg-radius-pill));
+  @include liquid-glass-interactive;
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+}
+
+// Composer shell
+.composer-popup {
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+.d-editor-container {
+  @include liquid-glass-surface(20px);
+}
+
+.d-editor-button-bar {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
