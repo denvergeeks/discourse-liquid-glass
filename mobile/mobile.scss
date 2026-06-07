@@ -1,0 +1,31 @@
+// Mobile liquid glass tweaks
+
+.d-header .wrap {
+  @include liquid-glass-surface(var(--lg-radius-pill));
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+  padding-inline: 0.5rem;
+}
+
+.navigation-container .nav-pills {
+  gap: 0.25rem;
+}
+
+.navigation-container .nav-pills > li > a {
+  border-radius: var(--lg-radius-pill);
+  padding-inline: 0.6rem;
+  padding-block: 0.25rem;
+}
+
+.navigation-container .nav-pills > li > a.active,
+.navigation-container .nav-pills > li > a:hover {
+  @include liquid-glass-surface(var(--lg-radius-pill));
+}
+
+.composer-popup {
+  border-radius: 16px;
+}
+
+.d-editor-container {
+  @include liquid-glass-surface(16px);
+}
